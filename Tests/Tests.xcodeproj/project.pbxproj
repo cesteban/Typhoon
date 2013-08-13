@@ -139,6 +139,21 @@
 		4E08794717B6762E004B86C9 /* NotSingletonA.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E08794617B6762E004B86C9 /* NotSingletonA.m */; };
 		4E08794817B6762E004B86C9 /* NotSingletonA.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E08794617B6762E004B86C9 /* NotSingletonA.m */; };
 		4E08794917B6762E004B86C9 /* NotSingletonA.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E08794617B6762E004B86C9 /* NotSingletonA.m */; };
+		4EA9DD5117B95DAD00D12F4E /* SingletonC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EA9DD5017B95DAD00D12F4E /* SingletonC.m */; };
+		4EA9DD5217B95DAD00D12F4E /* SingletonC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EA9DD5017B95DAD00D12F4E /* SingletonC.m */; };
+		4EA9DD5317B95DAD00D12F4E /* SingletonC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EA9DD5017B95DAD00D12F4E /* SingletonC.m */; };
+		4EA9DD5617B95DBE00D12F4E /* PrototypeA.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EA9DD5517B95DBE00D12F4E /* PrototypeA.m */; };
+		4EA9DD5717B95DBE00D12F4E /* PrototypeA.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EA9DD5517B95DBE00D12F4E /* PrototypeA.m */; };
+		4EA9DD5817B95DBE00D12F4E /* PrototypeA.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EA9DD5517B95DBE00D12F4E /* PrototypeA.m */; };
+		4EA9DD5B17B95DCB00D12F4E /* PrototypeB.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EA9DD5A17B95DCB00D12F4E /* PrototypeB.m */; };
+		4EA9DD5C17B95DCB00D12F4E /* PrototypeB.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EA9DD5A17B95DCB00D12F4E /* PrototypeB.m */; };
+		4EA9DD5D17B95DCB00D12F4E /* PrototypeB.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EA9DD5A17B95DCB00D12F4E /* PrototypeB.m */; };
+		4EA9DD6017B95DF000D12F4E /* PrototypeC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EA9DD5F17B95DF000D12F4E /* PrototypeC.m */; };
+		4EA9DD6117B95DF000D12F4E /* PrototypeC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EA9DD5F17B95DF000D12F4E /* PrototypeC.m */; };
+		4EA9DD6217B95DF000D12F4E /* PrototypeC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EA9DD5F17B95DF000D12F4E /* PrototypeC.m */; };
+		4EA9DD6517B95DFF00D12F4E /* PrototypeD.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EA9DD6417B95DFF00D12F4E /* PrototypeD.m */; };
+		4EA9DD6617B95DFF00D12F4E /* PrototypeD.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EA9DD6417B95DFF00D12F4E /* PrototypeD.m */; };
+		4EA9DD6717B95DFF00D12F4E /* PrototypeD.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EA9DD6417B95DFF00D12F4E /* PrototypeD.m */; };
 		4EB2190517B4F2C500B901C9 /* SingletonA.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EB218FD17B4F2C500B901C9 /* SingletonA.m */; };
 		4EB2190617B4F2C500B901C9 /* SingletonA.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EB218FD17B4F2C500B901C9 /* SingletonA.m */; };
 		4EB2190717B4F2C500B901C9 /* SingletonA.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EB218FD17B4F2C500B901C9 /* SingletonA.m */; };
@@ -237,6 +252,16 @@
 		4BE1AA5317A5885300FE2DA1 /* UnsatisfiableClassGDependsOnFInInitializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnsatisfiableClassGDependsOnFInInitializer.m; sourceTree = "<group>"; };
 		4E08794517B6762E004B86C9 /* NotSingletonA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotSingletonA.h; sourceTree = "<group>"; };
 		4E08794617B6762E004B86C9 /* NotSingletonA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotSingletonA.m; sourceTree = "<group>"; };
+		4EA9DD4F17B95DAD00D12F4E /* SingletonC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingletonC.h; sourceTree = "<group>"; };
+		4EA9DD5017B95DAD00D12F4E /* SingletonC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingletonC.m; sourceTree = "<group>"; };
+		4EA9DD5417B95DBE00D12F4E /* PrototypeA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrototypeA.h; sourceTree = "<group>"; };
+		4EA9DD5517B95DBE00D12F4E /* PrototypeA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrototypeA.m; sourceTree = "<group>"; };
+		4EA9DD5917B95DCB00D12F4E /* PrototypeB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrototypeB.h; sourceTree = "<group>"; };
+		4EA9DD5A17B95DCB00D12F4E /* PrototypeB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrototypeB.m; sourceTree = "<group>"; };
+		4EA9DD5E17B95DF000D12F4E /* PrototypeC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrototypeC.h; sourceTree = "<group>"; };
+		4EA9DD5F17B95DF000D12F4E /* PrototypeC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrototypeC.m; sourceTree = "<group>"; };
+		4EA9DD6317B95DFE00D12F4E /* PrototypeD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrototypeD.h; sourceTree = "<group>"; };
+		4EA9DD6417B95DFF00D12F4E /* PrototypeD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrototypeD.m; sourceTree = "<group>"; };
 		4EB218FC17B4F2C500B901C9 /* SingletonA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingletonA.h; sourceTree = "<group>"; };
 		4EB218FD17B4F2C500B901C9 /* SingletonA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingletonA.m; sourceTree = "<group>"; };
 		4EB218FE17B4F2C500B901C9 /* SingletonB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingletonB.h; sourceTree = "<group>"; };
@@ -546,6 +571,16 @@
 				4EB218FF17B4F2C500B901C9 /* SingletonB.m */,
 				4E08794517B6762E004B86C9 /* NotSingletonA.h */,
 				4E08794617B6762E004B86C9 /* NotSingletonA.m */,
+				4EA9DD4F17B95DAD00D12F4E /* SingletonC.h */,
+				4EA9DD5017B95DAD00D12F4E /* SingletonC.m */,
+				4EA9DD5417B95DBE00D12F4E /* PrototypeA.h */,
+				4EA9DD5517B95DBE00D12F4E /* PrototypeA.m */,
+				4EA9DD5917B95DCB00D12F4E /* PrototypeB.h */,
+				4EA9DD5A17B95DCB00D12F4E /* PrototypeB.m */,
+				4EA9DD5E17B95DF000D12F4E /* PrototypeC.h */,
+				4EA9DD5F17B95DF000D12F4E /* PrototypeC.m */,
+				4EA9DD6317B95DFE00D12F4E /* PrototypeD.h */,
+				4EA9DD6417B95DFF00D12F4E /* PrototypeD.m */,
 			);
 			path = SingletonsChain;
 			sourceTree = "<group>";
@@ -862,6 +897,11 @@
 				4EB2190817B4F2C500B901C9 /* SingletonB.m in Sources */,
 				4EB2191017B4F30D00B901C9 /* SingletonsChainAssembly.m in Sources */,
 				4E08794717B6762E004B86C9 /* NotSingletonA.m in Sources */,
+				4EA9DD5117B95DAD00D12F4E /* SingletonC.m in Sources */,
+				4EA9DD5617B95DBE00D12F4E /* PrototypeA.m in Sources */,
+				4EA9DD5B17B95DCB00D12F4E /* PrototypeB.m in Sources */,
+				4EA9DD6017B95DF000D12F4E /* PrototypeC.m in Sources */,
+				4EA9DD6517B95DFF00D12F4E /* PrototypeD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -906,6 +946,11 @@
 				4EB2190917B4F2C500B901C9 /* SingletonB.m in Sources */,
 				4EB2191117B4F30D00B901C9 /* SingletonsChainAssembly.m in Sources */,
 				4E08794817B6762E004B86C9 /* NotSingletonA.m in Sources */,
+				4EA9DD5217B95DAD00D12F4E /* SingletonC.m in Sources */,
+				4EA9DD5717B95DBE00D12F4E /* PrototypeA.m in Sources */,
+				4EA9DD5C17B95DCB00D12F4E /* PrototypeB.m in Sources */,
+				4EA9DD6117B95DF000D12F4E /* PrototypeC.m in Sources */,
+				4EA9DD6617B95DFF00D12F4E /* PrototypeD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -950,6 +995,11 @@
 				4EB2190A17B4F2C500B901C9 /* SingletonB.m in Sources */,
 				4EB2191217B4F30D00B901C9 /* SingletonsChainAssembly.m in Sources */,
 				4E08794917B6762E004B86C9 /* NotSingletonA.m in Sources */,
+				4EA9DD5317B95DAD00D12F4E /* SingletonC.m in Sources */,
+				4EA9DD5817B95DBE00D12F4E /* PrototypeA.m in Sources */,
+				4EA9DD5D17B95DCB00D12F4E /* PrototypeB.m in Sources */,
+				4EA9DD6217B95DF000D12F4E /* PrototypeC.m in Sources */,
+				4EA9DD6717B95DFF00D12F4E /* PrototypeD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

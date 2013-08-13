@@ -24,6 +24,11 @@
 #import "SingletonA.h"
 #import "SingletonB.h"
 #import "NotSingletonA.h"
+#import "SingletonC.h"
+#import "PrototypeA.h"
+#import "PrototypeB.h"
+#import "PrototypeC.h"
+#import "PrototypeD.h"
 #import "CircularDependenciesAssembly.h"
 
 @implementation TyphoonSharedComponentFactoryTests
@@ -244,6 +249,36 @@
 	assertThat(notSingletonA.dependencyOnA, is(singletonA));
 }
 
+
+- (void)test_resolves_chains_of_circular_dependencies_of_singletons_and_prototypes_mixing_init_injection_injected_by_type
+{
+	SingletonC *singletonC = [_singletonsChainFactory componentForType:[SingletonC class]];
+	PrototypeA *prototypeA = [_singletonsChainFactory componentForType:[PrototypeA class]];
+	PrototypeB *prototypeB = [_singletonsChainFactory componentForType:[PrototypeB class]];
+	PrototypeC *prototypeC = [_singletonsChainFactory componentForType:[PrototypeC class]];
+	PrototypeD *prototypeD = [_singletonsChainFactory componentForType:[PrototypeD class]];
+
+	assertThat(singletonC.prototypeA, isNot(nilValue()));
+	assertThat(singletonC.prototypeA, is(instanceOf([PrototypeA class])));
+
+	assertThat(prototypeA.prototypeB, isNot(nilValue()));
+	assertThat(prototypeA.prototypeB, is(instanceOf([PrototypeB class])));
+
+	assertThat(prototypeB.prototypeC, isNot(nilValue()));
+	assertThat(prototypeB.prototypeC, is(instanceOf([PrototypeC class])));
+	assertThat(prototypeB.prototypeD, isNot(nilValue()));
+	assertThat(prototypeB.prototypeD, is(instanceOf([PrototypeD class])));
+	
+	assertThat(prototypeC.prototypeA, isNot(nilValue()));
+	assertThat(prototypeC.prototypeA, is(instanceOf([PrototypeA class])));
+
+	assertThat(prototypeA.prototypeB.prototypeC.singletonC, is(singletonC));
+	assertThat(prototypeA.prototypeB.prototypeD.prototypeC.singletonC, is(singletonC));
+	assertThat(prototypeB.prototypeC.singletonC, is(singletonC));
+	assertThat(prototypeB.prototypeD.prototypeC.singletonC, is(singletonC));
+	assertThat(prototypeC.singletonC, is(singletonC));
+	assertThat(prototypeD.prototypeC.singletonC, is(singletonC));
+}
 
 
 @end

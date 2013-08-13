@@ -17,5 +17,33 @@
 		</initializer>
 	</component>
 
+
+    <component class="SingletonC" key="singletonC" scope="singleton">
+        <property name="prototypeA" ref="prototypeA"/>
+    </component>
+
+	<component class="PrototypeA" key="prototypeA" scope="prototype">
+		<property name="prototypeB" ref="prototypeB"/>
+	</component>
+
+	<component class="PrototypeB" key="prototypeB" scope="prototype">
+		<initializer selector="initWithPrototypeC:prototypeD:">
+			<argument parameterName="prototypeC" ref="prototypeC"/>
+			<argument parameterName="prototypeD" ref="prototypeD"/>
+		</initializer>
+	</component>
+
+	<component class="PrototypeC" key="prototypeC" scope="prototype">
+        <property name="singletonC" ref="singletonC"/>
+        <property name="prototypeA" ref="prototypeA"/>
+	</component>
+
+	<component class="PrototypeD" key="prototypeD" scope="prototype">
+		<initializer selector="initWithPrototypeC:">
+			<argument parameterName="prototypeC" ref="prototypeC"/>
+		</initializer>
+	</component>
+
+
 </assembly>
 

@@ -10,8 +10,19 @@
 
 @interface SingletonsChainAssembly : TyphoonAssembly
 
+// One cycle
+
 - (id)singletonA;
 - (id)singletonB;
 - (id)notSingletonA;
+
+
+// Another cycle
+
+- (id)singletonC;
+- (id)prototypeA;
+- (id)prototypeB;
+- (id)prototypeC;
+- (id)prototypeD;
 
 @end
